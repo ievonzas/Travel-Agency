@@ -1,0 +1,282 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url("../12destinations/borabora-pictures/bora5.png");
+    height: 320px;
+}
+
+h2,
+.booking-form-section h3 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 0.5vw 0;
+    letter-spacing: 0.08em;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 5vw;
+}
+
+.container img,
+.borabora-pair img,
+.borabora-pair-reversed img {
+    display: block;
+    height: 16vw;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 0.5vw 0.5vw 0;
+    border-radius: 0.3vw;
+    min-width: 0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.destination-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.borabora-pair,
+.borabora-pair-reversed {
+    display: flex;
+    align-items: stretch;
+    gap: 2vw;
+    margin-bottom: 2vw;
+    max-width: 60vw;
+    background: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.borabora-pair {
+    flex-direction: row;
+}
+
+.borabora-pair-reversed {
+    flex-direction: row-reverse;
+}
+
+.borabora-pair p,
+.borabora-pair-reversed p,
+.destination-description {
+
+    font-size: small;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+    max-width: 32vw;
+    align-self: center;
+    flex: 1 1 0;
+    padding-right: 1vw;
+}
+
+.destination-description p {
+    margin: 1vw 0;
+}
+
+.booking-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.5vw;
+    padding: 1vw 1vw 1vw 1vw;
+    box-sizing: border-box;
+
+}
+
+.booking-form label {
+    color: #333;
+    display: flex;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form input[type="number"] {
+    width: 30vw;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    padding: 0.4vw 1.5vw;
+    border: 1px solid #ccc;
+    border-radius: 0.3vw;
+    background: #fff;
+    color: #333;
+    margin-bottom: 1vw;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+.booking-form input:focus {
+    border: 1.5px solid #7ec4cf;
+    outline: none;
+}
+
+.booking-form button[type="submit"] {
+    margin-top: 1vw;
+    width: 15vw;
+    height: 2.4vw;
+    font-size: 1.3vw;
+    border-radius: 0.3vw;
+    border: none;
+    background: rgb(255, 193, 7);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.booking-form-section h3 {
+    font-size: 1.5vw;
+    color: #333;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.booking-form button[type="submit"]:hover {
+    background: rgb(230, 174, 6);
+}
+
+.back-link a {
+    font-size: 1.1vw;
+    color: #333;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) and (min-width: 361px) {
+    .destination-pair {
+        margin: 2vw 0;
+        padding-top: 2vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    header h1 {
+        font-size: 6vw;
+    }
+
+    h2,
+    .booking-form-section h3 {
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .borabora-pair,
+    .borabora-pair-reversed {
+        max-width: 90vw;
+    }
+
+    .borabora-pair p,
+    .borabora-pair-reversed p,
+    .destination-description {
+        font-size: 2vw;
+        max-width: unset;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form input[type="date"],
+    .booking-form input[type="number"],
+    .booking-form button[type="submit"] {
+        font-size: unset;
+        height: unset;
+    }
+
+    .back-link a {
+        font-size: unset;
+    }
+}
+
+@media (max-width: 360px) {
+    .destination-pair {
+        margin: 2vw 0;
+        padding-top: 2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .borabora-pair,
+    .borabora-pair-reversed,
+    .booking-form {
+        flex-direction: column;
+        max-width: 96vw;
+        padding: 0;
+        margin-bottom: 4vw;
+    }
+
+    .borabora-pair p,
+    .borabora-pair-reversed p,
+    .destination-description {
+        font-size: 4vw;
+        max-width: 96vw;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+    .container img,
+    .borabora-pair img,
+    .borabora-pair-reversed img {
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2,
+    .booking-form-section h3 {
+        font-size: 6vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .booking-form-col {
+        width: 100%;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form input[type="date"],
+    .booking-form input[type="number"] {
+        min-width: 92vw;
+        height: 10vw;
+        font-size: 4vw;
+        padding: 1vw 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .booking-form button[type="submit"] {
+        min-width: 92vw;
+        height: 10vw;
+        font-size: 4vw;
+        padding: 1vw 2vw;
+        margin-top: 2vw;
+    }
+
+    .back-link {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .back-link a {
+        font-size: 4vw;
+    }
+}

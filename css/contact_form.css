@@ -1,0 +1,142 @@
+header {
+    background-image: url("../images/contact_header.jpg");
+    height: 320px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    margin: 0;
+}
+
+form .btn {
+    background-color: rgb(255, 193, 7);
+}
+
+.form-text-label {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.form-text-label input,
+.form-text-label textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: #222;
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5vw;
+}
+
+.got-questions-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    border-radius: 0;
+    width: 30vw;
+    padding-top: 0;
+    padding-bottom: 5vw;
+}
+
+.got-questions-text p {
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 20vw 0 20vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) and (min-width: 361px) {
+    section {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .got-questions-text {
+        width: unset;
+        font-size: unset;
+    }
+
+    .got-questions-text p {
+        font-size: 2vw;
+    }
+
+    .form-text-label {
+        font-size: unset;
+    }
+
+    .form-text-label input {
+        font-size: unset;
+    }
+}
+
+@media (max-width: 360px) {
+    section {
+        flex-direction: column;
+        gap: 4vw;
+        max-width: 100vw;
+        padding: 4vw 0 0 0;
+    }
+
+    form {
+        width: 96vw;
+        padding: unset;
+        margin-bottom: 3vw;
+    }
+
+    .form-text-label {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .form-text-label input,
+    .form-text-label textarea {
+        font-size: 4vw;
+        padding: 2vw;
+        border-radius: 1vw;
+        height: 10vw;
+    }
+
+    .form-text-label textarea {
+        height: auto;
+    }
+
+    .got-questions-text {
+        width: unset;
+        padding: 0 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .got-questions-text p {
+        font-size: 4vw;
+    }
+
+    form .btn {
+        font-size: 4vw;
+        padding: 2vw;
+        height: 10vw;
+    }
+}

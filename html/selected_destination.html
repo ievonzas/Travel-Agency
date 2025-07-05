@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selected Destination</title>
+    <meta name="description" content="Travel agency: Selected Destination">
+    <meta name="author" content="You">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&display=swap"
+        rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <link href="../css/selected_destination.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="gradient gradient-top"></div>
+        <div class="gradient gradient-bottom"></div>
+        <div class="search-bar d-flex align-items-center justify-content-between" style="height:60px;">
+
+            <div class="d-flex align-items-center gap-2">
+                <img src="../icons/search-white.svg" alt="Search" width="22" height="22">
+                <span class="search-label text-white">Search</span>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../icons/globe-white.svg" alt="Logo" width="28" height="28">
+            </div>
+
+            <div class="d-flex align-items-center gap-3 tablet-or-desktop-only">
+                <div>
+                    <a href="destination_gallery.html" style="text-decoration:none; color:inherit;">
+                        <span class="dest-label text-white">Destinations</span>
+                    </a>
+
+                    <a href="contact_form.html" class="btn btn-light btn-sm rounded-pill px-3 fw">Contact us</a>
+                </div>
+            </div>
+
+            <div class="mobile-only">
+                <img src="../icons/three-bars-white.svg" alt="Menu" width="28" height="28">
+            </div>
+        </div>
+        <div class="header-text-group">
+            <div class="subtitle">Year long travel</div>
+            <h1 class="header-title">
+                Bora Bora:<br>Where Adventure Meets Tranquility
+            </h1>
+        </div>
+
+
+    </header>
+    <main>
+        <h2>The Ultimate Guide to Experiencing Bora Bora
+        </h2>
+        <section class="destination-pair">
+            <div class="borabora-pair">
+                <p>Bora Bora, a dazzling gem in the heart of French Polynesia, captivates travelers with its mesmerizing
+                    turquoise lagoon, lush volcanic peaks, and world-famous overwater bungalows. The island's serene
+                    waters, teeming with marine life, provide an extraordinary playground for exploration. Beneath the
+                    surface, vibrant coral gardens and schools of tropical fish create an underwater paradise. Whether
+                    lounging on its powdery beaches or gazing at the majestic Mount Otemanu, Bora Bora promises a
+                    setting of unrivaled beauty and tranquility.
+                </p>
+                <img src="../12destinations/borabora-pictures/bora1.jpg" alt="Bora Bora">
+            </div>
+            <div class="borabora-pair-reversed">
+                <p>Visitors can fully embrace Polynesian culture through authentic experiences that highlight the
+                    island's rich heritage and warm hospitality. From traditional dance performances to handicraft
+                    markets, every interaction offers a glimpse into the local way of life. The island's cuisine is a
+                    feast for the senses, with fresh seafood prepared using traditional flavors. Dining by the water,
+                    with the scent of coconut and vanilla in the air, enhances the magic of the moment.</p>
+                <img src="../12destinations/borabora-pictures/bora4.jpg" alt="Bora Bora">
+            </div>
+            <div class="borabora-pair">
+                <p>Beyond relaxation, Bora Bora is a playground for adventure enthusiasts, offering everything from
+                    thrilling jet ski tours to serene kayak excursions. Private boat tours reveal hidden coves, while
+                    guided nature hikes unveil the island's diverse flora and fauna. A spa day overlooking the lagoon
+                    offers a chance to unwind in ultimate luxury. Whether seeking exhilarating activities or quiet
+                    reflection, every experience on Bora Bora celebrates its reputation as a true paradise.</p>
+                <img src="../12destinations/borabora-pictures/bora3.jpg" alt="Bora Bora">
+            </div>
+        </section>
+
+        <section class="booking-form-section">
+            <h3>Book your trip to Bora Bora</h3>
+            <form class="booking-form">
+
+                <div class="form-text-label">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-text-label">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-text-label">
+                    <label for="from">From:</label>
+                    <input type="date" id="from" name="from" required>
+                </div>
+                <div class="form-text-label">
+                    <label for="to">To:</label>
+                    <input type="date" id="to" name="to" required>
+                </div>
+
+
+                <div class="form-text-label">
+                    <label for="guests">Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" value="2" required>
+                </div>
+                <button type="submit">Book Now</button>
+
+            </form>
+            <div class="back-link">
+                <a href="destination_gallery.html">&larr; Back to Destinations Gallery</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+
+        <div class="footer-links">
+            <div class="footer-links-title">Links</div>
+            <p><a href="index.html" style="text-decoration: underline; color: inherit;">Home</a><br></p>
+            <p><a href="destination_gallery.html"
+                    style="text-decoration: underline; color: inherit;">Destinations</a><br></p>
+            <p><span style=" text-decoration: underline;">About</span><br></p>
+            <p><a href="contact_form.html" style="text-decoration: underline; color: inherit;">Contact</a><br></p>
+        </div>
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+            </p>
+            <br />
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email">
+                <button class="btn btn-success" type="button" id="button-addon2">
+                    Subscribe <img src="../icons/arrow-right-white.svg" alt="Arrow" width="12" height="12">
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
